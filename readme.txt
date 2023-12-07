@@ -1,5 +1,3 @@
-# Nombre del Proyecto
-
 ## Dependencias
 
 Este proyecto requiere las siguientes dependencias:
