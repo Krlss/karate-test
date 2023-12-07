@@ -1,0 +1,8 @@
+Karate ha demostrado ser una herramienta robusta y eficiente para la automatización de pruebas de API. 
+Cucumber y JUnit han simplificado significativamente la escritura y ejecución de pruebas. La capacidad de expresar 
+escenarios de prueba en un lenguaje natural, combinada con la reutilización de componentes y la manipulación sencilla 
+de datos dinámicos, ha mejorado la claridad y mantenibilidad del código de prueba.
+
+La documentación generada automáticamente por Karate ha sido invaluable, facilitando la comprensión y 
+colaboración entre los miembros del equipo. Además, la flexibilidad de Karate para manejar diferentes protocolos y 
+formatos ha sido crucial al trabajar con servicios web variados.
