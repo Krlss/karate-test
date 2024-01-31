@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8"/>
     <title>Karate Timeline</title>
     <style>
       body, html { font-family: arial, sans-serif; font-size: 11pt; }
@@ -9,8 +8,8 @@
       .vis-item.failed { background-color: #F2928C; }
       .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
     </style>
-    <script src="res/vis.min.js"></script>
-    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="page-heading">
@@ -18,8 +17,8 @@
     </div>     
     <div id="visualization"></div>
     <script>
-var groups = [{"content":"main","id":1}];
-var items = [{"id":1,"group":1,"content":"src\/test\/java\/users\/get\/user-get[1:3]","start":1701948144576,"end":1701948146068,"title":"src\/test\/java\/users\/get\/user-get[1:3] 06:22:24.576-06:22:26.068 Get user on reqres"}];
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"users\/users[1:6]","start":1706644877685,"end":1706644879357,"title":"users\/users[1:6] 15:01:17.685-15:01:19.357 Crear un usuario con:  \"id\": 999 \"username\": \"Krlss\", \"firstName\": \"Carlos\", \"lastName\": \"Pico\", \"email\": \"krlss@gmail.com\", \"password\": \"1234\", \"phone\": \"1234\", \"userStatus\": 0"},{"id":2,"group":2,"content":"users\/users[2:12]","start":1706644877685,"end":1706644879357,"title":"users\/users[2:12] 15:01:17.685-15:01:19.357 Buscar el usuario creado","className":"failed"},{"id":3,"group":3,"content":"users\/users[3:17]","start":1706644877685,"end":1706644879363,"title":"users\/users[3:17] 15:01:17.685-15:01:19.363 Actualizar el nombre y el correo del usuario"},{"id":4,"group":4,"content":"users\/users[4:23]","start":1706644877685,"end":1706644879359,"title":"users\/users[4:23] 15:01:17.685-15:01:19.359 Buscar el usuario actualizado","className":"failed"},{"id":5,"group":5,"content":"users\/users[5:30]","start":1706644877685,"end":1706644879364,"title":"users\/users[5:30] 15:01:17.685-15:01:19.364 Eliminar el usuario","className":"failed"}];
 </script>
     <script>
       var container = document.getElementById('visualization');

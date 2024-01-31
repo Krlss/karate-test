@@ -15,10 +15,10 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
     testImplementation 'com.intuit.karate:karate-junit5:1.1.0'
     implementation group: 'com.intuit.karate', name: 'karate-core', version: karateVersion
     testImplementation group: 'com.intuit.karate', name: 'karate-apache', version: karateVersion
-     testImplementation group: 'com.intuit.karate', name: 'karate-junit4', version: karateVersion
 
     implementation group: 'io.cucumber', name: 'cucumber-java', version: cucumberVersion
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: cucumberVersion
@@ -31,8 +31,8 @@ dependencies {
     implementation group: 'com.trivago.rta', name: 'cucable-plugin', version: '1.9.0'
     implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.8'
     implementation group: 'net.masterthought', name: 'cucumber-reporting', version: '3.8.0'
-
 }
+
 
 sourceSets {
     test {
@@ -45,6 +45,7 @@ sourceSets {
 
 test {
     //pulls karate options into run time.
+    useJUnitPlatform()
     systemProperty "karate.options", System.properties.getProperty("karate.options")
     systemProperty "karate.env", System.properties.getProperty("karate.env")
     outputs.upToDateWhen { false }
