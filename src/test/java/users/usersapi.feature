@@ -5,7 +5,8 @@ Feature: Get user on petstore
 
   Scenario: Crear un usuario con:  "id": 999 "username": "Krlss", "firstName": "Carlos", "lastName": "Pico", "email": "krlss@gmail.com", "password": "1234", "phone": "1234", "userStatus": 0
     Given path 'user'
-    And request {"id": 999, "username": "Krlss", "firstName": "Carlos", "lastName": "Pico", "email": "krlss@gmail.com", "password": "1234", "phone": "1234", "userStatus": 0}
+    * def requestPayload = read('create.user.json')
+    And request requestPayload
     When method POST
     Then status 200    
 
@@ -16,7 +17,8 @@ Feature: Get user on petstore
 
 Scenario: Actualizar el nombre y el correo del usuario
     Given path 'user/Krlss'
-    And request {"firstName": "UpdatedName", "email": "updatedemail@gmail.com"}
+    * def requestPayloadUpdate = read('update.user.json')
+    And request requestPayloadUpdate
     When method PUT
     Then status 200
 
