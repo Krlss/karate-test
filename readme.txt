@@ -12,3 +12,6 @@ Este proyecto requiere las siguientes dependencias:
 1. Instala Java 8 o superior. Puedes descargarlo desde [aquí](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 2. Instala Maven 3.6.0 o superior. Puedes descargarlo desde [aquí](https://maven.apache.org/download.cgi).
 3. Clona este repositorio.
+
+## Para ejecutar la prueba 
+se puede hacer con el UserRunner... Y también con el Management para las pruebas paralelas, los dos sacan reportes de cucumber
